@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/azul</item>
+        <item name="colorPrimaryDark">@color/negro</item>
+        <item name="colorAccent">@color/azul</item>
+    </style>
+
+    <style name="estiloBoton">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:background">@color/azul</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">@font/mandatoryplaything</item>
+    </style>
+
+    <style name="estiloTextoB">
+        <item name="android:textColor">@color/blanco</item>
+        <item name="android:fontFamily">@font/mandatoryplaything</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="estiloTextoN">
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:fontFamily">@font/mandatoryplaything</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+    <style name="estiloTextoN2">
+        <item name="android:textColor">@color/negro</item>
+        <item name="android:fontFamily">@font/nairiambersanserif</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

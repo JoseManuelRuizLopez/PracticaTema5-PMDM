@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">PracticaTema5</string>
+
+    <string name="btn1">Apartado Nº1</string>
+    <string name="btn2">Apartado Nº2</string>
+
+    <string name="lblDesplazamiento">Desplazamiento del Toast</string>
+    <string name="txtDespHoriz">Desplazamiento Horizontal</string>
+    <string name="txtDespVerti">Desplazamiento Vertical</string>
+
+    <string name="lblTextoToast">Mensaje del Toast</string>
+    <string name="txtTextoToast">Texto del Toast</string>
+
+    <string name="lblAliHoriz">Alineación Horizontal</string>
+    <string name="lblAliVerti">Alineación Vertical</string>
+
+    <string name="btnMostrar">Mostrar</string>
+
+</resources>
