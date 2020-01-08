@@ -48,7 +48,7 @@
         app:layout_constraintVertical_bias="0.929" />
 
     <Spinner
-        android:id="@+id/spinner2"
+        android:id="@+id/spnVertical"
         android:layout_width="160dp"
         android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -71,7 +71,7 @@
 
     <TextView
         android:id="@+id/lblAliVerti"
-        style="@style/estiloTextoN"
+        style="@style/estiloTextoN2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/lblAliVerti"
@@ -84,7 +84,7 @@
 
     <TextView
         android:id="@+id/lblAliHoriz"
-        style="@style/estiloTextoN"
+        style="@style/estiloTextoN2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/lblAliHoriz"
@@ -136,7 +136,22 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtMensajeToast"
-        app:layout_constraintVertical_bias="0.508" />
+        app:layout_constraintVertical_bias="0.456" />
+
+    <TextView
+        android:id="@+id/lblError"
+        style="@style/estiloTextoN2"
+        android:layout_width="342dp"
+        android:layout_height="76dp"
+        android:text=""
+        android:textColor="@color/rojo"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMostrar"
+        app:layout_constraintVertical_bias="0.386" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

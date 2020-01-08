@@ -14,6 +14,31 @@
     <string name="lblAliHoriz">Alineación Horizontal</string>
     <string name="lblAliVerti">Alineación Vertical</string>
 
+    <string name="selcAli">Selecciona la alineación...</string>
+    <string name="izq">Izquierda</string>
+    <string name="med">Medio</string>
+    <string name="der">Derecha</string>
+    <string name="arr">Arriba</string>
+    <string name="cen">Centro</string>
+    <string name="aba">Abajo</string>
+
+
+    <string-array name="spnAliHoriz">
+        <item>@string/selcAli</item>
+        <item>@string/izq</item>
+        <item>@string/med</item>
+        <item>@string/der</item>
+    </string-array>
+
+    <string-array name="spnAliVerti">
+        <item>@string/selcAli</item>
+        <item>@string/arr</item>
+        <item>@string/cen</item>
+        <item>@string/aba</item>
+    </string-array>
+
     <string name="btnMostrar">Mostrar</string>
+
+    <string name="lblError">Has dejado campos vacios o sin seleccionar</string>
 
 </resources>
