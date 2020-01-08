@@ -48,7 +48,7 @@ public class ConfigurarToast extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                if (spnVert.getSelectedItem().toString().equals(getString(R.string.selcAli)) || spnHoriz.getSelectedItem().toString().equals(getString(R.string.selcAli))) {
+                if (spnVert.getSelectedItem().toString().equals(getString(R.string.selcAli)) || spnHoriz.getSelectedItem().toString().equals(getString(R.string.selcAli)) || txtDespHoriz.getText().toString().equals("") || txtDespVert.getText().toString().equals("") || txtMensajeToast.getText().toString().equals("")) {
                     lblError.setText(R.string.lblError);
                 } else {
                     String mnsToast = txtMensajeToast.getText().toString();
@@ -78,6 +78,8 @@ public class ConfigurarToast extends AppCompatActivity {
                     Toast toast = Toast.makeText(v.getContext(), mnsToast, Toast.LENGTH_LONG);
                     toast.setGravity(aliHoriz | aliVert, despHoriz, despVert);
                     toast.show();
+
+                    lblError.setText("");
                 }
             }
         });

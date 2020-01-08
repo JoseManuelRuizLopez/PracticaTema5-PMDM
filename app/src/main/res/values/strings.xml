@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">PracticaTema5</string>
+    <string name="Inicio">Inicio</string>
+    <string name="ConfToast">Configurar Toast</string>
+    <string name="ConfNotif">Configurar Notificación</string>
 
     <string name="btn1">Apartado Nº1</string>
     <string name="btn2">Apartado Nº2</string>
@@ -40,5 +43,17 @@
     <string name="btnMostrar">Mostrar</string>
 
     <string name="lblError">Has dejado campos vacios o sin seleccionar</string>
+    
+    
+    <string name="lblTitulo">Título del mensaje</string>
+    <string name="txtTitulo">Introduce el titulo</string>
+
+    <string name="lblMensaje">Mensaje a mostrar</string>
+    <string name="txtMensaje">Introduce el mensaje</string>
+
+    <string name="lblSeg">Numero de segundos que durará</string>
+    <string name="txtSeg">Introduce los segundos</string>
+
+    <string name="btnEnviar">Enviar</string>
 
 </resources>
