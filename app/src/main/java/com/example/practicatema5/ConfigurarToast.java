@@ -32,7 +32,7 @@ public class ConfigurarToast extends AppCompatActivity {
         txtMensajeToast = (EditText) findViewById(R.id.txtMensajeToast);
         spnHoriz = (Spinner) findViewById(R.id.spnHorizontal);
         spnVert = (Spinner) findViewById(R.id.spnVertical);
-        btnMostrar = (Button) findViewById(R.id.btnMostrar);
+        btnMostrar = (Button) findViewById(R.id.btnEnviar);
         lblError = (TextView) findViewById(R.id.lblError);
 
         //Rellenar los spinners
