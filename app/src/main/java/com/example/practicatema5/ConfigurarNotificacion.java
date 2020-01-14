@@ -11,6 +11,7 @@ import android.app.TaskStackBuilder;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -47,18 +48,28 @@ public class ConfigurarNotificacion extends AppCompatActivity {
     }
 
     public void notificacion(View v) {
-        Intent abrirApp = new Intent(getBaseContext(), Inicio.class);
-        PendingIntent pendingAbrirApp = PendingIntent.getActivity(this, 0, abrirApp, 0);
+        Handler hand = new Handler();
+        hand.postDelayed(new Runnable() {
+            @Override
+            public void run() {
 
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
-                .setSmallIcon(R.drawable.haloicon)
-                .setContentTitle(txtTitulo.getText().toString())
-                .setContentText(txtMensaje.getText().toString())
-                .setPriority(NotificationCompat.PRIORITY_DEFAULT)
-                .setContentIntent(pendingAbrirApp);
 
-        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
-        notificationManager.notify(0, builder.build());
+                Intent abrirApp = new Intent(getBaseContext(), Inicio.class);
+                PendingIntent pendingAbrirApp = PendingIntent.getActivity(getApplicationContext(), 0, abrirApp, 0);
+
+                NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), CHANNEL_ID)
+                        .setSmallIcon(R.drawable.haloicon)
+                        .setContentTitle(txtTitulo.getText().toString())
+                        .setContentText(txtMensaje.getText().toString())
+                        .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+                        .setContentIntent(pendingAbrirApp);
+
+                NotificationManagerCompat notificationManager = NotificationManagerCompat.from(getApplicationContext());
+                notificationManager.notify(0, builder.build());
+
+            }
+        } ,Integer.parseInt( txtSeg.getText().toString()) * 1000);
+
     }
 
     private void createNotificationChannel() {
