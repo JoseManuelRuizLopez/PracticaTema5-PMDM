@@ -29,6 +29,7 @@ public class ConfigurarNotificacion extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_configurar_notificacion);
+        createNotificationChannel();
 
         txtTitulo = (EditText) findViewById(R.id.txtTitulo);
         txtMensaje = (EditText) findViewById(R.id.txtMensaje);
@@ -38,14 +39,6 @@ public class ConfigurarNotificacion extends AppCompatActivity {
         btnEnviar.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
-
-                try {
-                    Thread.sleep(Long.parseLong(txtSeg.getText().toString()) * 1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
 
                 notificacion(v);
 
